@@ -290,3 +290,7 @@ function render() {
   renderer.clear();
   renderer.render(scene, camera);
 }
+
+function removeScene() {
+  scene.remove.apply(scene, scene.children);
+}
